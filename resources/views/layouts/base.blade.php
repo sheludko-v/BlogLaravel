@@ -11,7 +11,7 @@
 </head>
 <style>
     .container {
-        max-width: 720px;
+        max-width: 1024px;
     }
 
     .required:after {

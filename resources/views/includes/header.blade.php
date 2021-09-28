@@ -2,6 +2,7 @@
 
     <div class="container">
         <a href="{{route('home')}}" class="navbar-brand">
+            <img src="/logo.png" alt="{{'app.name'}}" width="45" height="45">
             {{config('app.name')}}
         </a>
 
