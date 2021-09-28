@@ -10,6 +10,10 @@
     <title>@yield('page.title', config('app.name'))</title>
 </head>
 <style>
+    .container {
+        max-width: 720px;
+    }
+
     .required:after {
         content: '*';
         color: red;

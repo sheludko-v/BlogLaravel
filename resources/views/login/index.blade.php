@@ -4,46 +4,56 @@
 
 @section('content')
     <section>
-        <div class="container">
+        <x-container>
+
             <div class="row">
                 <div class="col-12 col-md-6 offset-md-3">
-                    <div class="card m-2 mt-5">
-                        <div class="card-body">
-                            <h4 class="m-0">
+                    <x-card>
+                        <x-card-header>
+                            <x-card-title>
                                 {{__('Вход')}}
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <form action="">
+                            </x-card-title>
+                        </x-card-header>
 
-                                <div class="mb-3">
-                                    <label class="required mb-2">{{__('Email')}}</label>
+                        <x-card-body>
+
+                            <x-form action="{{route('login.store')}}" method="POST">
+
+                                <x-form-item>
+                                    <x-label>
+                                        {{__('Email')}}
+                                    </x-label>
                                     <input type="email" name="email" class="form-control" autofocus>
-                                </div>
+                                </x-form-item>
 
-                                <div class="mb-3">
-                                    <label class="required mb-2">{{__('Пароль')}}</label>
+                                <x-form-item>
+                                    <x-label>
+                                        {{__('Пароль')}}
+                                    </x-label>
                                     <input type="password" name="password" class="form-control">
-                                </div>
+                                </x-form-item>
 
-                                <div class="mb-3">
+                                <x-form-item>
                                     <div class="form-check">
-                                        <input type="checkbox" name="remember" value="1" class="form-check-input" id="remember">
+                                        <input type="checkbox" name="remember" value="1" class="form-check-input"
+                                               id="remember">
 
-                                        <label class="form-check-label" for="remember">
+                                        <x-label class="form-check-label" for="remember">
                                             {{__('Запомнить меня')}}
-                                        </label>
+                                        </x-label>
                                     </div>
-                                </div>
+                                </x-form-item>
 
                                 <button type="submit" class="btn btn-primary">
                                     {{__('Войти')}}
                                 </button>
-                            </form>
-                        </div>
-                    </div>
+                            </x-form>
+
+                        </x-card-body>
+                    </x-card>
                 </div>
             </div>
-        </div>
+
+        </x-container>
     </section>
 @endsection

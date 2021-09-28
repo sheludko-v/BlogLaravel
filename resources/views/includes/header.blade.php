@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2d3748;">
 
     <div class="container">
         <a href="{{route('home')}}" class="navbar-brand">
