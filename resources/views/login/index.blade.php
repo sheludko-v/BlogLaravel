@@ -20,7 +20,7 @@
                             <x-form action="{{route('login.store')}}" method="POST">
 
                                 <x-form-item>
-                                    <x-label>
+                                    <x-label required>
                                         {{__('Email')}}
                                     </x-label>
                                     <input type="email" name="email" class="form-control" autofocus>

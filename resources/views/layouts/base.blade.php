@@ -17,7 +17,6 @@
     .required:after {
         content: '*';
         color: red;
-        margin-left: 3px;
     }
 </style>
 <body>
