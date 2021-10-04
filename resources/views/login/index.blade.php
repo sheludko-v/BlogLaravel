@@ -23,30 +23,25 @@
                                     <x-label required>
                                         {{__('Email')}}
                                     </x-label>
-                                    <input type="email" name="email" class="form-control" autofocus>
+                                    <x-input type="email" name="email" autofocus required />
                                 </x-form-item>
 
                                 <x-form-item>
-                                    <x-label>
+                                    <x-label required>
                                         {{__('Пароль')}}
                                     </x-label>
-                                    <input type="password" name="password" class="form-control">
+                                    <x-input type="password" name="password" required />
                                 </x-form-item>
 
                                 <x-form-item>
-                                    <div class="form-check">
-                                        <input type="checkbox" name="remember" value="1" class="form-check-input"
-                                               id="remember">
-
-                                        <x-label class="form-check-label" for="remember">
-                                            {{__('Запомнить меня')}}
-                                        </x-label>
-                                    </div>
+                                   <x-checkbox name="remember">
+                                       {{__('Запомнить меня')}}
+                                   </x-checkbox>
                                 </x-form-item>
 
-                                <button type="submit" class="btn btn-primary">
+                                <x-button type="submit" color="success">
                                     {{__('Войти')}}
-                                </button>
+                                </x-button>
                             </x-form>
 
                         </x-card-body>
