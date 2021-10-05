@@ -14,13 +14,15 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a href="{{route('home')}}" class="nav-link active" aria-current="page">
+                    <a href="{{route('home')}}" class="nav-link {{active_link('home')}}"
+                       aria-current="page">
                         {{__('Главная')}}
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{route('blog')}}" class="nav-link">
+                    <a href="{{route('blog')}}" class="nav-link {{active_link('blog')}}"
+                       aria-current="page">
                         {{__('Статьи')}}
                     </a>
                 </li>
@@ -28,13 +30,14 @@
 
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a href="{{route('register')}}" class="nav-link" aria-current="page">
+                    <a href="{{route('register')}}" class="nav-link {{active_link('register')}}"
+                       aria-current="page">
                         {{__('Регистрация')}}
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{route('login')}}" class="nav-link">
+                    <a href="{{route('login')}}" class="nav-link {{active_link('login')}}" aria-current="page">
                         {{__('Вход')}}
                     </a>
                 </li>
