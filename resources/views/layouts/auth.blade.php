@@ -1,7 +1,7 @@
 @extends('layouts.base')
 
 @section('content')
-    <section>
+    <section class="mt-5">
         <x-container>
 
             <div class="row">

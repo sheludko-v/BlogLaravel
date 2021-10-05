@@ -18,7 +18,7 @@ class BlogController extends Controller
             'title' => 'Lorem ipsum dolor sit amet.',
             'content' => 'Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit.',
         ];
-        $posts = array_fill(0, 10, $post);
+        $posts = array_fill(0, 15, $post);
 
 
         return view('blog.index', compact('posts'));

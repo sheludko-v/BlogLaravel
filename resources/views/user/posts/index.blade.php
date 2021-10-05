@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
-@section('page.title', 'Мой блог')
+@section('page.title', 'Мои посты')
 
 @section('main.content')
 
     <x-title>
-        {{__('Список постов')}}
+        {{__('Мои посты')}}
     </x-title>
     @if(empty($posts))
         {{__('Нет ни одного поста')}}
@@ -20,4 +20,5 @@
     @endif
 
 @endsection
+
 

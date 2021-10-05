@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #2d3748;">
 
     <div class="container">
-        <a href="{{route('home')}}" class="navbar-brand">
+        <a href="https://github.com/stigmatik/BlogLaravel.git" class="navbar-brand" target="_blank">
             <img src="/logo.png" alt="{{'app.name'}}" width="45" height="45">
             {{config('app.name')}}
         </a>
@@ -21,7 +21,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{route('blog')}}" class="nav-link {{active_link('blog')}}"
+                    <a href="{{route('blog')}}" class="nav-link {{active_link('blog*')}}"
                        aria-current="page">
                         {{__('Статьи')}}
                     </a>
