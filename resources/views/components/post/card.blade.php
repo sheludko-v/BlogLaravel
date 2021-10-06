@@ -8,7 +8,7 @@
             </a>
         </h2>
         <p class="small text-muted">
-            {{now()->format('d.m.Y H:i')}}
+            {{now()->format('d.m.Y')}}
         </p>
     </x-card-body>
 </x-card>

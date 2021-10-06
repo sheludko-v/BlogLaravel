@@ -32,11 +32,23 @@ class PostController extends Controller
 
     public function show($post)
     {
+        $post = (object) [
+            'id' => 123,
+            'title' => 'Lorem ipsum dolor sit amet.',
+            'content' => 'Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit.',
+        ];
+
         return view('user.posts.show', compact('post'));
     }
 
     public function edit($post)
     {
+        $post = (object) [
+            'id' => 123,
+            'title' => 'Lorem ipsum dolor sit amet.',
+            'content' => 'Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit.',
+        ];
+
         return view('user.posts.edit', compact('post'));
     }
 

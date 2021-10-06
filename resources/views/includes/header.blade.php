@@ -2,7 +2,7 @@
 
     <div class="container">
         <a href="https://github.com/stigmatik/BlogLaravel.git" class="navbar-brand" target="_blank">
-            <img src="/logo.png" alt="{{'app.name'}}" width="45" height="45">
+            <img src="/logo.png" alt="{{'app.name'}}" width="45" height="45" style="margin-top: -3px;">
             {{config('app.name')}}
         </a>
 
