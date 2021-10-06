@@ -34,6 +34,11 @@ class RegisterController extends Controller
      */
     public function store(Request $request)
     {
+        $name = $request->input('name');
+        $email = $request->email;
+
+        dd($name, $email);
+
         return 'Запрос на регистрацию';
     }
 

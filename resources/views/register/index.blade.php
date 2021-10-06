@@ -56,7 +56,7 @@
                 </x-form-item>
 
                 <x-button type="submit">
-                    {{__('Войти')}}
+                    {{__('Регистрация')}}
                 </x-button>
             </x-form>
 
