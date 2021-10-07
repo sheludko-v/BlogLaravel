@@ -4,9 +4,9 @@
 
 @section('main.content')
 
-    <x-title>
-        {{__('Список постов')}}
-    </x-title>
+{{--    <x-title>--}}
+{{--        {{__('Список постов')}}--}}
+{{--    </x-title>--}}
 
     @include('blog.filter')
 

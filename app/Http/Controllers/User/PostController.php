@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $post = (object) [
             'id' => 123,
@@ -16,7 +16,9 @@ class PostController extends Controller
         ];
         $posts = array_fill(0, 15, $post);
 
-        return view('user.posts.index', compact('posts'));
+        $ip = $request->ip();
+
+        return view('user.posts.index', compact('posts', 'ip'));
     }
 
 
