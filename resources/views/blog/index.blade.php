@@ -7,8 +7,11 @@
     <x-title>
         {{__('Список постов')}}
     </x-title>
+
+    @include('blog.filter')
+
     @if(empty($posts))
-        {{__('Нет ни одного поста')}}
+        {{__('По вашему запросу ничего не найдено... ☹')}}
     @else
         <div class="row">
             @foreach($posts as $post)
