@@ -12,7 +12,7 @@
 
     Route::redirect('/home', '/')->name('home.redirect');
 
-//    Route::get('/test', TestController::class)->name('test')->middleware('token:secret');
+//    Route::get('/test', TestController::class)->name('test')->middleware('token');
     Route::get('/test', TestController::class)->name('test');
 
     Route::middleware('guest')->group(function () {
@@ -29,3 +29,4 @@
     Route::post('blog/{post}/like', [BlogController::class, 'like'])->name('blog.like');
 
     Route::resource('posts/{post}/comments', CommentController::class);
+
