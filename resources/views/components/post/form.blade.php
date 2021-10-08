@@ -16,7 +16,6 @@
         <x-trix name="content" value="{{$post->content ?? ''}}"/>
     </x-form-item>
 
-    <x-button type="submit">
-        {{__('Создать')}}
-    </x-button>
+    {{$slot}}
+
 </x-form>

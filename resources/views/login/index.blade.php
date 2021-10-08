@@ -28,7 +28,7 @@
                     <x-label required>
                         {{__('Email')}}
                     </x-label>
-                    <x-input type="email" name="email" autofocus required/>
+                    <x-input type="email" name="email" required/>
                 </x-form-item>
 
                 <x-form-item>

@@ -5,7 +5,8 @@
 @section('main.content')
 
     <x-title>
-        {{__('Личный кабинет ')}}{{$ip}}
+        <p>{{__('Личный кабинет ')}}</p>
+        <p>{{__('IP: ')}}{{$ip}}</p>
 
         <x-slot name="right">
             <x-button-link href="{{route('user.posts.create')}}">
