@@ -4,10 +4,6 @@
 
 @section('main.content')
 
-{{--    <x-title>--}}
-{{--        {{__('Список постов')}}--}}
-{{--    </x-title>--}}
-
     @include('blog.filter')
 
     @if(empty($posts))

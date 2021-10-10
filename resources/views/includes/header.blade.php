@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light my-nav">
+<nav class="navbar navbar-expand-md navbar-light border-bottom my-nav">
 
     <div class="container">
         <a href="https://github.com/stigmatik/BlogLaravel.git" class="navbar-brand" target="_blank">

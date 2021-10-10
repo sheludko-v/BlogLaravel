@@ -3,7 +3,7 @@
 
         <div class="col-12 col-md-8">
             <div class="mb-3">
-                <x-input name="search" value="{{request('search')}}" placeholder="{{__('Введите запрос...')}}"/>
+                <x-input name="search" value="{{request('search')}}" placeholder="{{__('Введите запрос...')}}" style="background-color: white;"/>
             </div>
         </div>
 

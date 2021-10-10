@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="/favicon-local.ico">
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/trix.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>@yield('page.title', config('app.name'))</title>
 </head>
 
