@@ -20,7 +20,7 @@
     @else
         <div class="row">
             @foreach($posts as $post)
-                <div class="m-3 border p-3 col-md-2 text-center">
+                <div class="m-3 border p-3 col-md-2 text-center" style="background-color: white">
                     <h2 class="h6">
                         <a href="{{route('user.posts.show', $post->id)}}">
                             {{$post->title}}
