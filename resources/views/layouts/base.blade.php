@@ -15,22 +15,27 @@
 
 <body>
 
-    <div class="d-flex flex-column justify-content-between min-vh-100">
-
-        @include('includes.header')
-
-        <main class="flex-grow-1 py-3">
-            @yield('content')
-        </main>
-
-        @include('includes.footer')
-
-    </div>
+<div class="d-flex flex-column justify-content-between min-vh-100">
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    @include('includes.header')
+    @include('includes.alert')
 
-    @stack('js')
+    <main class="flex-grow-1 py-3">
+        @yield('content')
+    </main>
+
+    @include('includes.footer')
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/app.js"></script>
+
+@stack('js')
 
 </body>
 </html>

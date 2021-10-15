@@ -11,6 +11,7 @@
         {
 
 
+
             return view('login.index');
         }
 
@@ -23,15 +24,14 @@
 
         public function store(Request $request)
         {
-            $session = app('session');
 
-            dd($session);
+            alert(__('Вход произведен успешно'));
 
-            if (true) {
-                return redirect()->back()->withInput();
-            }
+//            if (true) {
+//                return redirect()->back()->withInput();
+//            }
 
-            return 'Запрос на вход';
+            return redirect()->route('user');
         }
 
 
