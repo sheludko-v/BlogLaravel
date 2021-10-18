@@ -22,7 +22,6 @@
 
                 $table->string('avatar')->nullable();
                 $table->boolean('active')->default(true);
-//                $table->boolean('admin')->default(false);
 
                 $table->string('password');
                 $table->rememberToken();
