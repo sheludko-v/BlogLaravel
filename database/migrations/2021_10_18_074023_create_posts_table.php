@@ -17,7 +17,7 @@
                 $table->id();
                 $table->timestamps();
 
-                $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+                $table->foreignId('user_id')->constrained();
 
                 $table->string('title');
                 $table->text('content');
