@@ -20,7 +20,13 @@
 
 
     @include('includes.header')
-    @include('includes.alert')
+
+    <div class="container">
+        <div class="row h-100 justify-content-center align-items-center mt-3">
+            @include('includes.alert')
+        </div>
+    </div>
+
 
     <main class="flex-grow-1 py-3">
         @yield('content')

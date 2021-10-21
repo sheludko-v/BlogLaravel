@@ -2,6 +2,8 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\Login;
+    use App\Models\Post;
     use Illuminate\Http\Request;
 
     class LoginController extends Controller
@@ -25,11 +27,10 @@
         public function store(Request $request)
         {
 
-            alert(__('Вход произведен успешно'));
+            $validated = validate($request->all(), Login::getRules());
 
-//            if (true) {
-//                return redirect()->back()->withInput();
-//            }
+            alert(__('Вход выполнен!'));
+
 
             return redirect()->route('user');
         }

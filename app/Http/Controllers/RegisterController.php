@@ -2,6 +2,8 @@
 
     namespace App\Http\Controllers;
 
+    use App\Models\Login;
+    use App\Models\Register;
     use Illuminate\Http\Request;
 
     class RegisterController extends Controller
@@ -21,15 +23,9 @@
 
         public function store(Request $request)
         {
-//            if ($name = $request->name) {
-//                $name = strtoupper($name);
-//            }
-//
-//            return $name;
+            $validated = validate($request->all(), Register::getRules());
 
-            if (true) {
-                return redirect()->back()->withInput();
-            }
+            alert(__('Регистрация прошла успешно!'));
 
             return redirect()->route('user');
         }

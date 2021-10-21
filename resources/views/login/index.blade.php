@@ -28,14 +28,22 @@
                     <x-label required>
                         {{__('Email')}}
                     </x-label>
-                    <x-input type="email" name="email" required/>
+
+                    <x-input name="email" />
+
+                    <x-error name="email" />
+
                 </x-form-item>
 
                 <x-form-item>
                     <x-label required>
                         {{__('Пароль')}}
                     </x-label>
-                    <x-input type="password" name="password" required/>
+
+                    <x-input type="password" name="password" />
+
+                    <x-error name="password" />
+
                 </x-form-item>
 
                 <x-form-item>

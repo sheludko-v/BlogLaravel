@@ -46,9 +46,23 @@ body {
 
 }
 
-.my-alert {
-    background-color: rgba(39, 118, 245, 0.56);
-    color: white;
-    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.95);
-    font-size: 120%;
+.my-alert-s {
+    color: #2d3748;
+    font-size: 110%;
+    text-shadow: 0px 0px 4px white;
 }
+
+.my-alert-d {
+    width: 230px;
+    border-radius: 3px;
+    background-color: rgba(231, 62, 62, 0.06);
+    color: darkred;
+    text-shadow: 0px 0px 4px white;
+    margin-bottom: 20px;
+    border: 1px solid rgba(231, 62, 62, 0.05);
+}
+
+.no-decor {
+    list-style: none;
+}
+
